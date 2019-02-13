@@ -1,5 +1,13 @@
-class { '::autostructure_toolbox::agent':
-  access_token => Sensitive('DPPRQOG3MOUW0I93TL54S6C40'),
-  secret_key   => Sensitive('h0h31ay7pr7jolxjm374ys2jtgouwn33yidm7'),
-  download_url => 'https://cdpe.autostructure.io/download/client',
+# Contains agent to be installed on target machine
+class autostructure_toolbox::agent (
+  String $access_token,
+  String $secret_key,
+  String $download_url,
+  ) {
+
+  class { 'pipelines::agent':
+    access_token => Sensitive($access_token),
+    secret_key   => Sensitive($secret_key),
+    download_url => $download_url,
+  }
 }
