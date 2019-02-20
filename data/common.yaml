@@ -12,7 +12,7 @@ autostructure_toolbox::packages::packages:
   - 'git-all'
   - 'gcc'
   - 'gcc-c++'
-  - 'openssh-clients'
+  # - 'openssh-clients'
   - 'autoconf'
   - 'automake'
   - 'patch'
