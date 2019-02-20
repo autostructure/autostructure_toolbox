@@ -1,49 +1,49 @@
---
+---
 autostructure_toolbox::packages::packages:
-  -'bison',
-  -'bzip2',
-  -'bzip2-devel',
-  -'coreutils',
-  -'dpkg-devel',
-  -'dpkg',
-  -'gdbm-devel',
-  -'glib-devel',
-  -'libc-devel',
-  -'git-all',
-  -'gcc',
-  -'g++',
-  -'openssh-client',
-  -'autoconf',
-  -'automake',
-  -'patch',
-  -'readline',
-  -'readline-devel',
-  -'zlib',
-  -'zlib-devel',
-  -'libffi-devel',
-  -'openssl-devel',
-  -'libgcc',
-  -'bash',
-  -'wget',
-  -'ca-certificates',
-  -'libressl',
-  -'libressl-devel',
-  -'libxml2-devel',
-  -'libxslt-devel',
-  -'linux-headers',
-  -'make',
-  -'ncurses-devel',
-  -'procps',
-  -'ruby',
-  -'tar',
-  -'xz',
-  -'yaml-devel',
+  - 'bison'
+  - 'bzip2'
+  - 'bzip2-devel'
+  - 'coreutils'
+  - 'dpkg-devel'
+  - 'dpkg'
+  - 'gdbm-devel'
+  - 'glib-devel'
+  - 'libc-devel'
+  - 'git-all'
+  - 'gcc'
+  - 'g++'
+  - 'openssh-client'
+  - 'autoconf'
+  - 'automake'
+  - 'patch'
+  - 'readline'
+  - 'readline-devel'
+  - 'zlib'
+  - 'zlib-devel'
+  - 'libffi-devel'
+  - 'openssl-devel'
+  - 'libgcc'
+  - 'bash'
+  - 'wget'
+  - 'ca-certificates'
+  - 'libressl'
+  - 'libressl-devel'
+  - 'libxml2-devel'
+  - 'libxslt-devel'
+  - 'linux-headers'
+  - 'make'
+  - 'ncurses-devel'
+  - 'procps'
+  - 'ruby'
+  - 'tar'
+  - 'xz'
+  - 'yaml-devel'
 autostructure_toolbox::packages::gem_packages:
-  -'r10k',
-  -'ra10ke',
-  -'puppet:5.3.3',
-  -'rubocop',
-  -'puppetlabs_spec_helper',
-  -'puppet-lint',
-  -'onceover',
-  -'rest-client',
+  - 'r10k'
+  - 'ra10ke'
+  - 'puppet:5.3.3'
+  - 'rubocop'
+  - 'puppetlabs_spec_helper'
+  - 'puppet-lint'
+  - 'onceover'
+  - 'rest-client'
