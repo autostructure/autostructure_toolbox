@@ -18,6 +18,10 @@ class autostructure_toolbox::packages (
     ensure   => installed,
     provider => 'gem',
   }
+  class { 'rbenv': }
+  rbenv::plugin { [ 'rbenv/rbenv-vars', 'rbenv/ruby-build' ]: }
+  rbenv::build { '2.5.1p57': global => true }
+  rbenv::gem { 'rubocop': ruby_version => '2.5.1p57' }
 
   file { '/Rakefile':
     ensure => present,
