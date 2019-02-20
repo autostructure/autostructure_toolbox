@@ -50,4 +50,4 @@ autostructure_toolbox::packages::gem_packages:
   # - 'puppetlabs_spec_helper'
   # - 'puppet-lint'
   - 'onceover'
-  # - 'rest-client'
+  - 'rest-client'
