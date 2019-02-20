@@ -38,6 +38,10 @@ autostructure_toolbox::packages::packages:
   - 'tar'
   - 'xz'
   - 'libyaml-devel'
+  # Extra packages for rbenv
+  - 'git-core'
+  - 'libtool'
+  - 'sqlite-devel'
 autostructure_toolbox::packages::gem_packages:
   # - 'r10k'
   # - 'ra10ke'
