@@ -34,6 +34,7 @@ autostructure_toolbox::packages::packages:
   - 'ncurses-devel'
   - 'procps'
   - 'ruby'
+  - 'ruby-devel'
   - 'tar'
   - 'xz'
   - 'libyaml-devel'
