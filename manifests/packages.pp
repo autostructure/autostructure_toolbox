@@ -10,7 +10,7 @@ class autostructure_toolbox::packages (
   }
 
   package { 'cmake':
-    ensure   => '3.2.2',
+    ensure   => '3.14.0-rc2',
     provider => 'dnf',
     require  => Package['dnf'],
   }
