@@ -42,7 +42,7 @@ autostructure_toolbox::packages::packages:
   - 'git-core'
   - 'libtool'
   - 'sqlite-devel'
-  - 'cmake'
+  # - 'cmake'
 autostructure_toolbox::packages::gem_packages:
   - 'r10k'
   - 'ra10ke'

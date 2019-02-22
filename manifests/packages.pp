@@ -9,6 +9,12 @@ class autostructure_toolbox::packages (
     ensure => installed,
   }
 
+  package { 'cmake':
+    ensure   => '3.2.2',
+    provider => 'dnf',
+    require  => Package['dnf'],
+  }
+
   package { $packages:
     ensure   => installed,
     provider => 'dnf',
