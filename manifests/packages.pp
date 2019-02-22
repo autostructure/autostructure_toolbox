@@ -18,7 +18,7 @@ class autostructure_toolbox::packages (
   class { 'rbenv': }
   rbenv::plugin { [ 'rbenv/rbenv-vars', 'rbenv/ruby-build' ]: }
   rbenv::build { '2.5.1': global => true }
-  rbenv::gem { 'facter': version => $facter_version }
+  rbenv::gem { 'facter': version => $facter_version, ruby_version => '2.5.1' }
   rbenv::gem { $gem_packages: ruby_version => '2.5.1' }
 
   file { '/Rakefile':
