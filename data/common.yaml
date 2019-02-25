@@ -52,5 +52,5 @@ autostructure_toolbox::packages::gem_packages:
   # - 'puppet-lint'
   - 'onceover'
   - 'rest-client'
-autostructure_toolbox::packages::facter_version: 'latest'
+autostructure_toolbox::packages::facter_version: '2.5.1'
 # placeholder
