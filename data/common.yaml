@@ -53,3 +53,4 @@ autostructure_toolbox::packages::gem_packages:
   - 'onceover'
   - 'rest-client'
 autostructure_toolbox::packages::facter_version: 'latest'
+# placeholder
