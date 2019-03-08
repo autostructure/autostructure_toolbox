@@ -5,9 +5,9 @@ class autostructure_toolbox::packages (
   String        $facter_version,
 ) {
 
-  package { 'dnf':
-    ensure => installed,
-  }
+  # package { 'dnf':
+  #   ensure => installed,
+  # }
 
   # package { 'cmake':
   #   ensure   => '2.8.7',
@@ -15,23 +15,28 @@ class autostructure_toolbox::packages (
   #   require  => Package['dnf'],
   # }
 
-  package { 'pdk':
-    ensure   => '1.9.1',
-    provider => 'dnf',
-    require  => Package['dnf'],
-  }
-
   package { $packages:
     ensure   => installed,
-    provider => 'dnf',
-    require  => Package['dnf'],
+    # provider => 'dnf',
+    # require  => Package['dnf'],
   }
 
-  class { 'rbenv': }
-  rbenv::plugin { [ 'rbenv/rbenv-vars', 'rbenv/ruby-build' ]: }
-  rbenv::build { '2.5.1': global => true }
-  rbenv::gem { 'facter': version => $facter_version, ruby_version => '2.5.1' }
-  rbenv::gem { $gem_packages: ruby_version => '2.5.1' }
+  package { $gem_packages:
+    ensure   => 'installed',
+    provider => gem,
+  }
+
+  class { '::ruby':
+    version      => '2.6.0',
+    gems_version => '3.0.1',
+  }
+
+
+  # class { 'rbenv': }
+  # rbenv::plugin { [ 'rbenv/rbenv-vars', 'rbenv/ruby-build' ]: }
+  # rbenv::build { '2.5.1': global => true }
+  # rbenv::gem { 'facter': version => $facter_version, ruby_version => '2.5.1' }
+  # rbenv::gem { $gem_packages: ruby_version => '2.5.1' }
 
   file { '/Rakefile':
     ensure => present,
