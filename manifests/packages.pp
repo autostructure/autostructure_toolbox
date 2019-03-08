@@ -9,8 +9,14 @@ class autostructure_toolbox::packages (
     ensure => installed,
   }
 
-  package { 'cmake':
-    ensure   => '2.8.7',
+  # package { 'cmake':
+  #   ensure   => '2.8.7',
+  #   provider => 'dnf',
+  #   require  => Package['dnf'],
+  # }
+
+  package { 'pdk':
+    ensure   => '1.9.1',
     provider => 'dnf',
     require  => Package['dnf'],
   }
