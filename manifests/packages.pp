@@ -38,6 +38,16 @@ class autostructure_toolbox::packages (
     ensure      => 'present',
     default_use => true;
   }
+
+  rvm_gem {
+    'r10k':
+      ensure => 'latest',
+      name   => 'r10k';
+    'ra10ke':
+      ensure => 'latest',
+      name   => 'ra10ke';
+
+  }
   # class { '::ruby':
   #   version      => '2.4.1',
   #   gems_version => 'latest',

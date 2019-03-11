@@ -44,8 +44,8 @@ autostructure_toolbox::packages::packages:
   - 'sqlite-devel'
   # - 'cmake'
 autostructure_toolbox::packages::gem_packages:
-  - 'r10k'
-  - 'ra10ke'
+  # - 'r10k'
+  # - 'ra10ke'
   # - 'puppet:5.3.3'
   - 'rubocop'
   # - 'puppetlabs_spec_helper'
