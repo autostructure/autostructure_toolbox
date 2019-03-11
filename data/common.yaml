@@ -47,10 +47,10 @@ autostructure_toolbox::packages::gem_packages:
   # - 'r10k'
   # - 'ra10ke'
   # - 'puppet:5.3.3'
-  - 'rubocop'
+  # - 'rubocop'
   # - 'puppetlabs_spec_helper'
   # - 'puppet-lint'
-  - 'onceover'
-  - 'rest-client'
+  # - 'onceover'
+  # - 'rest-client'
 autostructure_toolbox::packages::facter_version: '2.5.1'
 # placeholder

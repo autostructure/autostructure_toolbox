@@ -21,10 +21,10 @@ class autostructure_toolbox::packages (
     # require  => Package['dnf'],
   }
 
-  package { $gem_packages:
-    ensure   => 'installed',
-    provider => gem,
-  }
+  # package { $gem_packages:
+  #   ensure   => 'installed',
+  #   provider => gem,
+  # }
 
   class { '::rvm':
     gnupg_key_id => false,
@@ -52,6 +52,18 @@ class autostructure_toolbox::packages (
       ensure       => 'latest',
       ruby_version => 'ruby-2.3.0',
       name         => 'cri';
+    'rest-client':
+      ensure       => 'latest',
+      ruby_version => 'ruby-2.3.0',
+      name         => 'rest-client';
+    'onceover':
+      ensure       => 'latest',
+      ruby_version => 'ruby-2.3.0',
+      name         => 'onceover';
+    'rubocop':
+      ensure       => 'latest',
+      ruby_version => 'ruby-2.3.0',
+      name         => 'rubocop';
   }
   # class { '::ruby':
   #   version      => '2.4.1',
