@@ -1,7 +1,7 @@
 # Packages to be installed on agent machine
 class autostructure_toolbox::packages (
   Array[String] $packages,
-  Array[String] $gem_packages,
+  # Array[String] $gem_packages,
   String        $facter_version,
 ) {
 
