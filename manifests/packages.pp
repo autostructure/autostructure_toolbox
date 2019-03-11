@@ -26,10 +26,19 @@ class autostructure_toolbox::packages (
     provider => gem,
   }
 
-  class { '::ruby':
-    version      => '2.4.1',
-    gems_version => 'latest',
+  class { '::rvm':
+    gnupg_key_id => false,
   }
+
+  rvm_system_ruby {
+    'ruby-2.3.0':
+    ensure      => 'present',
+    default_use => true,
+  }
+  # class { '::ruby':
+  #   version      => '2.4.1',
+  #   gems_version => 'latest',
+  # }
 
 
   # class { 'rbenv': }
