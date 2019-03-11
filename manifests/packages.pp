@@ -32,8 +32,11 @@ class autostructure_toolbox::packages (
 
   rvm_system_ruby {
     'ruby-2.0.0':
+    ensure      => 'present';
+    # default_use => true,
+    'ruby-2.3.0':
     ensure      => 'present',
-    default_use => true,
+    default_use => true;
   }
   # class { '::ruby':
   #   version      => '2.4.1',
