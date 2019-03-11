@@ -7,7 +7,7 @@ autostructure_toolbox::packages::packages:
   # - 'dpkg-devel'
   # - 'dpkg'
   - 'gdbm-devel'
-  - 'glib'
+  # - 'glib'
   - 'glibc-devel'
   - 'git-all'
   - 'gcc'

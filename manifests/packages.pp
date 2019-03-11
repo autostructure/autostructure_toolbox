@@ -28,7 +28,7 @@ class autostructure_toolbox::packages (
 
   class { '::ruby':
     version      => '2.4.1',
-    gems_version => '2.0.14',
+    gems_version => 'latest',
   }
 
 
