@@ -57,7 +57,7 @@ GEM
     net-ssh (5.1.0)
     net-telnet (0.1.1)
     netrc (0.11.0)
-    parallel (1.13.0)
+    parallel (1.14.0)
     parallel_tests (2.14.2)
       parallel
     parser (2.5.1.2)
@@ -69,7 +69,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (3.0.3)
-    puppet (6.2.0)
+    puppet (6.3.0)
       facter (> 2.0.1, < 4)
       fast_gettext (~> 1.1.2)
       hiera (>= 3.2.1, < 4)
@@ -141,7 +141,7 @@ GEM
     rspec-mocks (3.8.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
-    rspec-puppet (2.7.2)
+    rspec-puppet (2.7.3)
       rspec
     rspec-puppet-facts (1.9.2)
       facter
@@ -188,7 +188,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
-    unicode-display_width (1.4.1)
+    unicode-display_width (1.5.0)
     url (0.3.2)
     yard (0.9.18)
 
@@ -198,7 +198,7 @@ PLATFORMS
 DEPENDENCIES
   fast_gettext
   json (<= 2.0.4)
-  puppet (= 6.2.0)
+  puppet (= 6.3.0)
   puppet-module-posix-default-r2.4
   puppet-module-posix-dev-r2.4
   puppet-module-win-default-r2.4
