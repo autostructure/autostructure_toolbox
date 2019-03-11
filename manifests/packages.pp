@@ -41,12 +41,17 @@ class autostructure_toolbox::packages (
 
   rvm_gem {
     'r10k':
-      ensure => 'latest',
-      name   => 'r10k';
+      ensure       => 'latest',
+      ruby_version => 'ruby-2.3.0',
+      name         => 'r10k';
     'ra10ke':
-      ensure => 'latest',
-      name   => 'ra10ke';
-
+      ensure       => 'latest',
+      ruby_version => 'ruby-2.3.0',
+      name         => 'ra10ke';
+    'cri':
+      ensure       => 'latest',
+      ruby_version => 'ruby-2.3.0',
+      name         => 'cri';
   }
   # class { '::ruby':
   #   version      => '2.4.1',
