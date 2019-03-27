@@ -16,9 +16,7 @@ This module installs a set of dev tools for use with Continuous Delivery for Pup
 
 ## Description
 
-Briefly tell users why they might want to use your module. Explain what your module does and what kind of problems users can solve with it.
-
-This should be a fairly short description helps the user decide if your module is what they want.
+This module is useful for those who may want an environment with enough developer tools to run Puppet tests, but do not have the capability to run a docker image
 
 ## Setup
 
