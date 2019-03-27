@@ -22,7 +22,7 @@ This module is useful for those who may want an environment with enough develope
 
 ### Beginning with autostructure_toolbox
 
-The very basic steps needed for a user to get the module up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of the module.
+
 
 ## Usage
 
